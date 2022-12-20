@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 90vh;
+    overflow-x: hidden;
+    background-color: rgb(167, 162, 162);
+    padding: 20px;
+    /* font-famiy */
+}
+h1{
+    margin:10px 0 10px 10px
+}
+.details{
+    padding: 20px;
+    display: grid;
+    grid-template-rows:50px 50px ;
+    grid-template-columns: 50% 50%;
+    margin: 0 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(212, 209, 209);
+}
+.name{
+    grid-column: 1 / 2;
+}
+.name input{
+    width: 350px;
+    margin-left: 40px;
+}
+.details button{
+    /* align-self: center; */
+    width: 235px;
+    height: 40px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgb(124, 122, 122);
+    transition: all 0.5s;
+    font-size: 20px;
+    color: white;
+}
+.details button:hover{
+    transform: scale(1.1);
+}
+.data{
+    margin: 0 10px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(124, 122, 122);
+}
+.th,.td{
+    display: grid;          
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 10px 0 10px 0;
+}
+.th{
+    font-size: 25px;
+    font-weight: 800;
+}
+.td{
+    font-size: 22px;
+}
+.td button{
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 2px;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+.td button:hover{
+    transform: rotate(-360deg);
+}
+
+label{
+    font-size: 20px;
+}
+input{
+    outline: none;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: rgb(233, 230, 230);
+    border:1px solid rgb(121, 118, 118);
+}
+
+
+
+/* Responsive Design*/
+
+@media only screen and (max-width:960px){
+    .details{
+        grid-template-rows:50px 50px 50px 50px;
+        grid-template-columns: 100%;
+        padding: 10px 50px 0 60px;
+        
+    }
+    h1{
+        padding: 10px 50px 0 50px;
+    }
+    .date input{
+        margin-left: 50px;
+    }
+    .th{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .td{
+        font-size: 16px;
+    }
+    .th,.td{
+        padding: 10px 50px 0 50px;
+    }
+    .details button{
+        margin-left:20px;
+    }
+}
